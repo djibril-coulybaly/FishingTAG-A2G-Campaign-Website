@@ -1,0 +1,63 @@
+/**************************************************************************
+Universal Selector = Sets the style for all the elements on the HTML Page
+**************************************************************************/
+*, 
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*{
+  text-decoration: none;
+  list-style: none;
+}
+
+html{
+  box-sizing: border-box;
+}
+  
+a{
+  margin: 10px 0;
+}
+
+.about, .donation, footer {
+    text-align: center;
+}
+
+.main-content {
+    width: 100%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 30px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.125);
+}
+
+nav .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.wrapper .pageLink {
+    display: inline-flex;
+}
+
+.pageLink li i {
+    color: #555555;
+}
+
+.pageLink a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 0.9rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 300ms ease;
+}
