@@ -20,7 +20,7 @@ html{
 
 body{
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #000428, #004e92);
+  background: linear-gradient(to right,  #004e92, #003158);
   color: #ffffff;
 }
   
@@ -81,6 +81,11 @@ header{
   border: 1px solid #000000;
   padding: 4rem 0;
 }
+
+.companyLogo img {
+  display: inline-block;
+}
+
 
 .how-it-works{
   border: 1px solid #000000;
