@@ -20,6 +20,8 @@ html{
 
 body{
   font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #000428, #004e92);
+  color: #ffffff;
 }
   
 a{
@@ -77,10 +79,12 @@ video {
 
 header{
   border: 1px solid #000000;
+  padding: 4rem 0;
 }
 
 .how-it-works{
   border: 1px solid #000000;
+  background: linear-gradient(to right, #0077B6, #0096C7);
 }
 
 .steps{
@@ -99,6 +103,7 @@ header{
 
 .donation{
   border: 1px solid #000000;
+  background: linear-gradient(to right, #0096C7, #90E0EF);
 }
 
 footer{
