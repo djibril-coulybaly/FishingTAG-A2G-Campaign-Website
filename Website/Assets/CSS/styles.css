@@ -23,7 +23,11 @@ body{
   background: linear-gradient(to right,  #004e92, #003158);
   color: #ffffff;
 }
-  
+
+p {
+  font-size: 1.3rem;
+}
+
 a{
   margin: 10px 0;
 }
@@ -35,6 +39,10 @@ h1 {
 
 h2 {
   font-weight: 300;
+  font-size: 3rem;
+}
+
+h3 {
   font-size: 3rem;
 }
 
