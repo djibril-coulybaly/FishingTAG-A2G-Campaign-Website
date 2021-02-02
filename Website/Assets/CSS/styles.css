@@ -53,6 +53,10 @@ nav .wrapper {
     position: relative;
 }
 
+.logo img {
+  vertical-align: top;
+}
+
 .wrapper .pageLink {
     display: inline-flex;
 }
@@ -106,6 +110,11 @@ header{
   padding: 12% 1.6rem;
 }
 
+.image-contents img, .text-contents img {
+  width: 100%;
+  height: 100%;
+}
+
 .donation{
   border: 1px solid #000000;
   background: linear-gradient(to right, #0096C7, #90E0EF);
@@ -113,9 +122,7 @@ header{
 
 footer{
   border: 1px solid #000000;
+  padding-top: 4rem;
 }
 
-.image-contents img, .texrt-contents img {
-  width: 100%;
-  height: 100%;
-}
+
