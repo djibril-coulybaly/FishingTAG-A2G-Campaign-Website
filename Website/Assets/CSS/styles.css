@@ -24,7 +24,7 @@ body{
   color: #ffffff;
 }
 
-p {
+p, label {
   font-size: 1.3rem;
 }
 
