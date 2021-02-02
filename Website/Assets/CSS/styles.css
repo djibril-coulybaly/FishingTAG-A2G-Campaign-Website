@@ -97,8 +97,13 @@ header{
   padding: 4rem 0;
 }
 
+.companyLogo {
+  padding: 30px 0;
+}
+
 .companyLogo img {
   display: inline-block;
+  padding: 0 10px;
 }
 
 
