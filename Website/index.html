@@ -13,7 +13,7 @@
         <!-- Main Content -->
         <div class="main-content">
             <!-- Header -->
-            <nav>
+            <nav id="navbar">
                 <div class="wrapper nav_container">
                     <!-- Logo -->
                     <div class="logo">
@@ -23,28 +23,29 @@
                     <!-- Re-directs to section of webpage -->
                     <ul class="pageLink">
                         <!-- About the campaign -->
-                        <li><a href="#">About the campaign</a></li>
+                        <li><button onclick="scrollToAboutCampaign();" class="buttonHoverMargin"><p>About the campaign</p></button></li>
                         <!-- How it works -->
-                        <li><a href="#">How it works</a></li>
+                        <li><button onclick="scrollToHowItWorks();" class="buttonHoverMargin"><p>How it works</p></button></li>
                         <!-- Donate Now Button -->
                         <li>
-                            <button><a href="">Donate</a></button>
+                            <button id="buttonNav" onclick="scrollToDonateNow();"><p>Donate</p></button>
                         </li>
                     </ul>
                 </div>
             </nav>
 
             <!-- About the campaign -->
-            <div class="about">
+            <div class="about parallax">
                 <!-- Promotional Video -->
                 <video src=""  autoplay="" controls="" loop="" muted="muted"></video>
 
                 <!-- Title, company logo and info about campaign -->
-                <header>
+                <header id="about-campaign">
                     <h1>Alone to be Together Campaign</h1>
                     <h2>#A2G</h2>
                     <div class="companyLogo">
                         <img src="Assets/Images/displayLogo.jpg" alt="">
+                        <h1 id="partnership">X</h1>
                         <img src="Assets/Images/displayLogo.jpg" alt="">
                     </div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, excepturi explicabo quasi quas dolorum error et ex quod, itaque totam doloribus fugit autem. Voluptates neque distinctio tempora suscipit iste natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, facilis! Vel officiis consequuntur perspiciatis corrupti ratione optio tempora deleniti? Officiis nemo voluptates quibusdam quis. Iste at eius aperiam doloremque maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, hic eos. Atque quae dolores praesentium non et animi natus repudiandae fugit eaque vitae! Sint nihil rem ut facilis ex numquam.</p>
@@ -52,7 +53,8 @@
             </div>
 
             <!-- Process of participating in the campaign -->
-            <div class="how-it-works">
+            <div class="how-it-works" id="how-it-works">
+                <h1>How does it work?</h1>
                 <div class="steps">
                     <div class="image-contents">
                         <img src="Assets\Images\how it works.jpg" alt="">
@@ -85,67 +87,134 @@
             </div>
             
             <!-- Donation Form -->
-            <div class="donation">
-                <div class="donation-form">
-                    <h1>Be a part of the solution!</h1>
+            <!-- <div class="donation" id="donate-now">
+                <h1>Be a part of the solution!</h1>
+                <div class="donation-form">    
                     <form action="" method="post">
-                        <label for="firstName">First Name:</label>
-                        <input type="text" name="firstName" id="firstName">
-                        
-                        <br>
+                        <div class="user-box">
+                            <input type="text" name="firstName" id="firstName" required="">
+                            <label for="firstName">First Name:</label>
+                        </div>
 
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" name="lastName" id="lastName">
-                        
-                        <br>
+                        <div class="user-box">
+                            <input type="text" name="lastName" id="lastName" required="">
+                            <label for="lastName">Last Name:</label>
+                        </div>
 
-                        <label for="emailAddress">Email Address:</label>
-                        <input type="email" name="emailAddress" id="emailAddress">
-                        
-                        <br>
+                        <div class="user-box">
+                            <input type="email" name="emailAddress" id="emailAddress" required="">
+                            <label for="emailAddress">Email Address:</label>
+                        </div>
 
-                        <label for="mobileNumber">Mobile Number:</label>
-                        <input type="tel" name="mobileNumber" id="mobileNumber">
-                        
-                        <br>
+                        <div class="user-box">
+                            <input type="tel" name="mobileNumber" id="mobileNumber" required=""> 
+                            <label for="mobileNumber">Mobile Number:</label>
+                        </div>
 
-                        <label for="addressLine1">Address Line 1:</label>
-                        <input type="text" name="addressLine1" id="addressLine1">
-                        
-                        <br>
+                        <div class="user-box">
+                            <input type="text" name="addressLine1" id="addressLine1" required="">
+                            <label for="addressLine1">Address Line 1:</label>
+                        </div>
 
-                        <label for="addressLine2">Address Line 2:</label>
-                        <input type="text" name="addressLine2" id="addressLine2">
-                        
-                        <br>
+                        <div class="user-box">
+                            <input type="text" name="addressLine2" id="addressLine2" required="">
+                            <label for="addressLine2">Address Line 2:</label>
+                        </div>
 
-                        <label for="city">City:</label>
-                        <input type="text" name="city" id="city">
-                        
-                        <br>
+                        <div class="user-box">
+                            <input type="text" name="city" id="city" required="">
+                            <label for="city">City:</label>
+                        </div>
 
-                        <label for="state">State:</label>
-                        <input type="text" name="state" id="state">
-                        
-                        <br>
+                        <div class="user-box">
+                            <input type="text" name="state" id="state" required="">
+                            <label for="state">State:</label>
+                        </div>
 
-                        <label for="zipPostcode">Zip / Postcode:</label>
-                        <input type="text" name="zipPostcode" id="zipPostcode">
+                        <div class="user-box">
+                            <input type="text" name="zipPostcode" id="zipPostcode" required="">
+                            <label for="zipPostcode">Zip / Postcode:</label>
+                        </div>
+
+                        <button id="dfb"><a id="dfbText" href="">Donate</a></button>
                     </form>
                 </div>
+            </div> -->
+
+            <!-- Amount Raised and Link to Donation Form -->
+            <div class="donation" id="donate-now">
+                <h1>Be a part of the solution!</h1>
+                
+                <div class="donation-container">
+                    <div class="amount-raised">    
+                        <p>So far we have raised a total of:</p>
+                        <h1>$1000.00</h1>
+                        <p>towards the fight against COVID-19!</p>
+                    </div>
+                    <div class="link-to-donation-form">    
+                        <p>Click on the donate button to contribute (You will be redirected to Paypal's website in order to proceed!)</p>
+                        <br>
+                        <button id="dfb"><a id="dfbText" href="">Donate</a></button>
+                    </div>
+                </div>
+                
             </div>
 
             <!-- Footer -->
-            <footer>
+            <footer class="parallax">
                 <!-- FishingTAG Logo -->
                 <div class="footerLogo">
                     <img src="Assets/Images/displayLogo.jpg" alt="">
                 </div>
                 
                 <!-- Copyright Information -->
-                <p>Copyright © 2021 all rights reserved</p>
-                <p>www.fishingtag.com</p>
+                <a href=""><p>Copyright © 2021 all rights reserved</p></a>
+                <a href="https://www.fishingtag.com">www.fishingtag.com</a>
             </footer>
         </div>
+
+        <script type="text/javascript">           
+            window.onscroll = () => {
+                const nav = document.querySelector('#navbar');
+                if(this.scrollY <= 10) nav.className = ''; 
+                else nav.className = 'scroll';
+            };
+
+            function scrollToAboutCampaign(){
+                var element = document.getElementById('about-campaign');
+                var headerOffset = 100;
+                var elementPosition = element.offsetTop;
+                var offsetPosition = elementPosition - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+
+            function scrollToHowItWorks(){
+                var element = document.getElementById('how-it-works');
+                var headerOffset = 100;
+                var elementPosition = element.offsetTop;
+                var offsetPosition = elementPosition - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+
+            function scrollToDonateNow(){
+                var element = document.getElementById('donate-now');
+                var headerOffset = 100;
+                var elementPosition = element.offsetTop;
+                var offsetPosition = elementPosition - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
+        </script>
     </body>
 </html>
