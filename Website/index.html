@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="Assets\CSS\styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
     </head>
+    
     <body>
         <!-- Main Content -->
         <div class="main-content">
@@ -21,7 +22,7 @@
                     </div>
 
                     <!-- Re-directs to section of webpage -->
-                    <ul class="pageLink">
+                    <ul class="pageLink displayPageLink">
                         <!-- About the campaign -->
                         <li><button onclick="scrollToAboutCampaign();" class="buttonHoverMargin"><p>About the campaign</p></button></li>
                         <!-- How it works -->
@@ -31,6 +32,11 @@
                             <button id="buttonNav" onclick="scrollToDonateNow();"><p>Donate</p></button>
                         </li>
                     </ul>
+
+                    <!-- Donate button for mobile view -->
+                    <div class="display-on-mobile-only" onclick="openNav()">
+                        <button id="buttonNav" onclick="scrollToDonateNow();"><p class="mobile_donate_button">Donate</p></button> 
+                    </div>
                 </div>
             </nav>
 
@@ -151,6 +157,7 @@
                         <h1>$1000.00</h1>
                         <p>towards the fight against COVID-19!</p>
                     </div>
+
                     <div class="link-to-donation-form">    
                         <p>Click on the donate button to contribute (You will be redirected to Paypal's website in order to proceed!)</p>
                         <br>
@@ -168,53 +175,12 @@
                 </div>
                 
                 <!-- Copyright Information -->
-                <a href=""><p>Copyright © 2021 all rights reserved</p></a>
-                <a href="https://www.fishingtag.com">www.fishingtag.com</a>
+                <p>Copyright © 2021 all rights reserved</p>
+                <a href="https://www.fishingtag.com" id="footerLink"><p>www.fishingtag.com</p></a>
             </footer>
         </div>
 
-        <script type="text/javascript">           
-            window.onscroll = () => {
-                const nav = document.querySelector('#navbar');
-                if(this.scrollY <= 10) nav.className = ''; 
-                else nav.className = 'scroll';
-            };
-
-            function scrollToAboutCampaign(){
-                var element = document.getElementById('about-campaign');
-                var headerOffset = 100;
-                var elementPosition = element.offsetTop;
-                var offsetPosition = elementPosition - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: "smooth"
-                });
-            }
-
-            function scrollToHowItWorks(){
-                var element = document.getElementById('how-it-works');
-                var headerOffset = 100;
-                var elementPosition = element.offsetTop;
-                var offsetPosition = elementPosition - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: "smooth"
-                });
-            }
-
-            function scrollToDonateNow(){
-                var element = document.getElementById('donate-now');
-                var headerOffset = 100;
-                var elementPosition = element.offsetTop;
-                var offsetPosition = elementPosition - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: "smooth"
-                });
-            }
-        </script>
+        <!-- Custom Javascripts -->
+        <script src="Assets/Javascript/scroll.js"></script>
     </body>
 </html>
