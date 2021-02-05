@@ -18,7 +18,7 @@
                 <div class="wrapper nav_container">
                     <!-- Logo -->
                     <div class="logo">
-                        <img src="Assets/Images/navLogo.jpg" alt="">
+                        <a href="index.html"><img src="Assets/Images/navLogo.jpg" alt=""></a>
                     </div>
 
                     <!-- Re-directs to section of webpage -->
@@ -159,9 +159,14 @@
                     </div>
 
                     <div class="link-to-donation-form">    
-                        <p>Click on the donate button to contribute (You will be redirected to Paypal's website in order to proceed!)</p>
+                        <p>Click on the donate button to contribute and fill in your shipping details in the following pages (You will be redirected to Paypal's website in order to proceed!)</p>
                         <br>
-                        <button id="dfb"><a id="dfbText" href="">Donate</a></button>
+                        <form action="https://www.paypal.com/donate" method="post" target="_top">
+                            <input type="hidden" name="hosted_button_id" value="6PQ7PGAM55VFW" />
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                            <img alt="" border="0" src="https://www.paypal.com/en_KR/i/scr/pixel.gif" width="1" height="1" />
+                        </form>
+                        <!-- <button id="dfb"><a id="dfbText" href="">Donate</a></button> -->
                     </div>
                 </div>
                 
