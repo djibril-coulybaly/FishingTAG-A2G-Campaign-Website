@@ -227,6 +227,7 @@ header{
   z-index: 2;
   position: relative;
   box-shadow: 0 8px 32px 0 rgba(86, 162, 229, 0.5);
+  padding-bottom: 4rem;
 }
 
 .donation h1, .how-it-works h1{
@@ -245,6 +246,7 @@ header{
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   border-radius: 50px;
   margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 
 .donation-form .user-box {
