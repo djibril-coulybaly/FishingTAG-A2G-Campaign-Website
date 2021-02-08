@@ -14,6 +14,10 @@ Universal Selector = Sets the style for all the elements on the HTML Page
   list-style: none;
 }
 
+#ordNum {
+  list-style: decimal;
+}
+
 html{
   box-sizing: border-box;
   height: 100%;
@@ -21,13 +25,19 @@ html{
 
 body{
   font-family: 'Poppins', sans-serif;
-  /* background: linear-gradient(to right,  #004e92, #003158); */
-  color: #ffffff;
   height: 100%;
 }
 
 p {
   font-size: 1.3rem;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'kopub 돋움체';
+  line-height: 2rem;
+}
+
+@font-face{
+  font-family: 'kopub 돋움체';
+  src: url('Font/KoPubDotumMedium.ttf');
 }
 
 a{
@@ -35,13 +45,14 @@ a{
 }
 
 a:visited {
-  color: #ffffff;
+  color: #000000;
 }
 
 
 h1 {
   font-weight: 200;
   font-size: 5rem;
+  font-family: 'DM Serif Display', serif;
 }
 
 h2 {
@@ -54,58 +65,50 @@ h3 {
 }
 
 .about, .donation, footer {
-    text-align: center;
+  text-align: center;
 }
 
 .main-content {
-    width: 100%;
-    background: linear-gradient(to right,  #004e92, #003158);
+  width: 100%;
 }
 
 nav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0px 30px;
-    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.125); */
-    /* border: 1px solid #000000; */
-    margin-bottom: 1rem;
-    background-color: transparent;
-    transition: background-color 0.4s ease-out;
-    z-index: 10;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 30px;
+  background-color: transparent;
+  transition: background-color 0.4s ease-out;
+  z-index: 10;
 }
 
 nav.scroll {
-  /* background-color: #A1572F;
-  color: #eef; */
-
-  /* background: rgba( 255, 255, 255, 0.25 ); */
-  /* background: rgba( 90, 127, 148, 0.9 ); */
-  /* background: linear-gradient(to right, #004e92, #003158); */
-  background: linear-gradient(90deg, rgb(0, 78, 146) 0%, rgba(0,49,88,0.8) 100%);
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 32px 0 rgba(163, 165, 189, 0.37);
   backdrop-filter: blur( 7.5px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 nav .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 .logo img {
   vertical-align: top;
+  max-height: 100px;
+  padding: 10px;
 }
 
 .wrapper .pageLink {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .pageLink li i {
-    color: #555555;
+  color: #555555;
 }
 
 .pageLink button {
@@ -119,7 +122,7 @@ nav .wrapper {
 }
 
 .pageLink button:hover {
-  background: #0096C7;
+  background: #ddd2c4;
   border-radius: 5px;
   transition: all 300ms ease;
 }
@@ -130,15 +133,15 @@ nav .wrapper {
 }
 
 .pageLink button p, .mobile_donate_button {
-    color: #ffffff;
-    font-size: 1.2rem;
-    padding: 0.9rem 1.5rem;
-    border-radius: 0.5rem;
-    transition: all 500ms ease;
+  color: #000000;
+  font-size: 1.2rem;
+  padding: 0.9rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 500ms ease;
 }
 
 #buttonNav {
-  background: #0077B6;
+  background: #ddd2c4;
 	color: inherit;
 	border: none;
 	padding: 0;
@@ -154,27 +157,22 @@ nav .wrapper {
 
 .about {
   /* border: 1px solid #000000; */
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  z-index: 4;
+  box-shadow: 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  z-index: 3;
   position: relative;
+  padding-top: 1rem;
 }
 
 video {
   width: 80%;
 }
 
-header{
-  /* border: 1px solid #000000; */
-  padding: 4rem 0;
-}
-
 .companyLogo {
   padding: 30px 0;
 }
 
-.companyLogo img {
-  display: inline-block;
-  padding: 0 40px;
+.companyLogo p {
+  padding: 1.6rem;
 }
 
 #partnership{
@@ -183,11 +181,12 @@ header{
 
 .how-it-works{
   /* border: 1px solid #000000; */
-  background: linear-gradient(to right, #0077B6, #0096C7);
+  /* background: linear-gradient(to right, #0077B6, #0096C7); */
   text-align: center;
   padding-bottom: 4rem;
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  z-index: 3;
+  box-shadow: 0 8px 32px 0 rgba(163, 165, 189, 0.37);
+  background-color: #f6f4f1;
+  z-index: 4;
   position: relative;
 }
 
@@ -196,16 +195,16 @@ header{
   display: flex;
   transform: skewY(-5deg);
   margin: 2rem;
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  box-shadow: 0 8px 32px 0 rgba(163, 165, 189, 0.37);
   backdrop-filter: blur( 7.5px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   border-radius: 50px;
   margin-bottom: 4rem;
 }
 
-/* .image-contents{
-  width: 50%;
-} */
+.image-contents {
+  padding: 30px;
+}
 
 .text-contents{
   width: 60%;
@@ -219,14 +218,16 @@ header{
   width: 100%;
   height: 100%;
   vertical-align: top;
+  border-radius: 50px;
 }
 
 .donation{
   /* border: 1px solid #000000; */
-  background: linear-gradient(to right, #0096C7, #90E0EF);
-  z-index: 2;
+  /* background: linear-gradient(to right, #0096C7, #90E0EF); */
+  z-index: 3;
+  background-color: #ffffff;
   position: relative;
-  box-shadow: 0 8px 32px 0 rgba(86, 162, 229, 0.5);
+  /* box-shadow: 0 8px 32px 0 rgba(86, 162, 229, 0.5); */
   padding-bottom: 4rem;
 }
 
@@ -305,9 +306,9 @@ header{
   margin-top: auto;
 }
 
-footer{
-  /* border: 1px solid #000000; */
-  padding-top: 4rem;
+
+.footerLogo img {
+  padding-bottom: 1rem;
 }
 
 #dfb{
@@ -329,7 +330,11 @@ footer{
 }
 
 #footerLink:hover {
-  color: #03e9f4;
+  color: #927c61;
+}
+
+#thankYouText {
+  padding-bottom: 4rem;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -347,7 +352,7 @@ footer{
   }
 
   .companyLogo img {
-    width: 40%;
+    width: 100%;
   }
  
   .amount-raised, .link-to-donation-form {
@@ -366,6 +371,7 @@ footer{
 
   .donation-container {
     display: inline-block;
+    padding-bottom: unset;
   }
 
   .footerLogo img {
