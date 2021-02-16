@@ -39,3 +39,16 @@ function scrollToDonateNow(){
         behavior: "smooth"
     });
 }
+
+
+function AboutCampaign() {
+    window.location.href = "index.php#about-campaign";
+}
+
+function HowItWorks() {
+    window.location.href = "index.php#how-it-works";
+}
+
+function DonateNow() {
+    window.location.href = "index.php#donate-now";
+}
