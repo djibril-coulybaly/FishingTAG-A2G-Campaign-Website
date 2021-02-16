@@ -18,7 +18,7 @@
                 <div class="wrapper nav_container">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="index.html"><img src="Assets/Images/피싱태그 로고만.png" alt=""></a>
+                        <a href="index.php"><img src="Assets/Images/피싱태그 로고만.png" alt=""></a>
                     </div>
 
                     <!-- Re-directs to section of webpage -->
@@ -40,7 +40,7 @@
                 </div>
             </nav>
 
-            <!-- Donation Form -->
+            <!-- What's Next -->
             <div class="how-it-works" id="how-it-works">
                 <h1>You're all set!</h1>
                 <h2 id="thankYouText">You'll recieve an email with confirmation of your donation. We will also keep you posted with any updates to the campaign via email and our campaign website</h2>
@@ -50,6 +50,7 @@
                     </div>
                     <div class="text-contents">
                         <h3>Donate and fill in shipping details</h3>
+                        <br>
                         <p>Click on the donate button and fill in your shipping details to receive your smart measure tag and certificate of donation</p>
                     </div>
                 </div>
@@ -57,6 +58,7 @@
                 <div class="steps">
                     <div class="text-contents">
                         <h3>Receive the certificate and smart measure</h3>
+                        <br>
                         <p>You'll receive your certificate of donation with steps to registering for the tournament and your smart measure tag</p>
                     </div>
                     <div class="image-contents">
@@ -70,6 +72,7 @@
                     </div>
                     <div class="text-contents">
                         <h3>Download 'FishingTAG' and join the tournament</h3>
+                        <br>
                         <ol>
                             <li id="ordNum"><p>Download the 'FishingTAG' app on iOS and Android using the QR Codes bellow</p></li>
                             <li id="ordNum">
