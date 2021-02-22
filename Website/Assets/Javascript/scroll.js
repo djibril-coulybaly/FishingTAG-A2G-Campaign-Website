@@ -52,3 +52,7 @@ function HowItWorks() {
 function DonateNow() {
     window.location.href = "index.php#donate-now";
 }
+
+function home() {
+    window.location.href = "index.php";
+}
