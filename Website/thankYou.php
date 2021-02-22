@@ -44,48 +44,20 @@
             <div class="how-it-works" id="how-it-works">
                 <h1>You're all set!</h1>
                 <h2 id="thankYouText">You'll recieve an email with confirmation of your donation. We will also keep you posted with any updates to the campaign via email and our campaign website</h2>
-                <div class="steps">
+                <div class="whatNext">
                     <div class="image-contents">
-                        <img src="Assets\Images\개인정보(600x400).png" alt="">
+                        <img id = "QR_img" src="Assets\Images\ios 큐알코드.png" alt="">
+                        <a href="https://apps.apple.com/app/id1459843522?l=en"><h3 id="downloadApp">Download from the Apple App Store</h3></a>
                     </div>
                     <div class="text-contents">
-                        <h3>Donate and fill in shipping details</h3>
-                        <br>
-                        <p>Click on the donate button and fill in your shipping details to receive your smart measure tag and certificate of donation</p>
-                    </div>
-                </div>
-
-                <div class="steps">
-                    <div class="text-contents">
-                        <h3>Receive the certificate and smart measure</h3>
-                        <br>
-                        <p>You'll receive your certificate of donation with steps to registering for the tournament and your smart measure tag</p>
-                    </div>
-                    <div class="image-contents">
-                        <img src="Assets\Images\줄자_기부증서_600x400.png" alt="">
-                    </div>
-                </div>
-                    
-                <div class="steps">
-                    <div class="image-contents">
-                        <img src="Assets\Images\핸드폰이미지_600x400.png" alt="">
-                    </div>
-                    <div class="text-contents">
-                        <h3>Download 'FishingTAG' and join the tournament</h3>
-                        <br>
-                        <ol>
-                            <li id="ordNum"><p>Download the 'FishingTAG' app on iOS and Android using the QR Codes bellow</p></li>
-                            <li id="ordNum">
-                                <p>Click on the pop-up for the A2G Tournament (Or go to Tournament -> Official -> A2G tournament)</p>
-                            </li>
-                            <li id="ordNum"><p>Finally click on the 'register’ button and check the participants list to make sure you are in the tournament</p></li>
-                        </ol>
+                        <img id = "QR_img" src="Assets\Images\안드로이드qr코드.png" alt="">
+                        <a href="https://play.google.com/store/apps/details?id=com.fishingtag"><h3 id="downloadApp">Download from the Google Play Store</h3></a>
                     </div>
                 </div>
             </div>
 
             <!-- Footer -->
-            <footer class="parallax">
+            <footer id="thankYouFooter" class="parallax">
                 <!-- FishingTAG Logo -->
                 <div class="footerLogo">
                     <a href="index.php"><img src="Assets/Images/피싱태그 로고_150x100.png" alt=""></a>
