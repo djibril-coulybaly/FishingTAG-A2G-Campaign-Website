@@ -306,6 +306,26 @@ video {
   margin-top: auto;
 }
 
+.whatNext {
+  /* border: 1px solid #000000; */
+  display: flex;
+  margin: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(163, 165, 189, 0.37);
+  backdrop-filter: blur( 7.5px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 50px;
+  margin-bottom: 4rem;
+}
+
+#QR_img {
+  width: unset;
+  height: unset;
+  border-radius: unset;
+}
+
+#cancelFooter, #thankYouFooter {
+  margin-top: 4rem;
+}
 
 .footerLogo img {
   padding-bottom: 1rem;
@@ -329,12 +349,13 @@ video {
   color: #fff;
 }
 
-#footerLink:hover {
+#footerLink:hover, #downloadApp {
   color: #927c61;
 }
 
 #thankYouText {
   padding-bottom: 4rem;
+  margin: 2rem;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -361,7 +382,7 @@ video {
     margin-bottom: 4rem;
   }
 
-  .steps {
+  .steps, .whatNext {
     display: inline-block;
   }
 
