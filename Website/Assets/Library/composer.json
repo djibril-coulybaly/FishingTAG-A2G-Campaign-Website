@@ -1,0 +1,7 @@
+{
+    "name": "me/shopping-cart-app",
+    "require": {
+        "paypal/merchant-sdk-php":"^3.12",
+        "phpmailer/phpmailer": "^6.2"
+    }
+}

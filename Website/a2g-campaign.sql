@@ -38,7 +38,8 @@ CREATE TABLE `shippinglist` (
   `AddressLine2` varchar(150) NOT NULL,
   `City` varchar(150) NOT NULL,
   `State` varchar(150) NOT NULL,
-  `Zip` varchar(150) NOT NULL
+  `Zip` varchar(150) NOT NULL,
+  `TransactionID` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
